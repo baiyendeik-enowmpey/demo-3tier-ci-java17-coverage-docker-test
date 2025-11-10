@@ -32,7 +32,7 @@ jobs:
 
     - name: Run container smoke test
       run: |
-        docker run -d -p 8088:8080 --name demo-app demo-3tier-ci-java17-coverage
+        docker run -d -p 8088:8088 --name demo-app demo-3tier-ci-java17-coverage
         echo "⏳ Waiting for application to start..."
         for i in {1..30}; do
           if curl -s http://localhost:8088/actuator/health | grep -q "UP"; then
