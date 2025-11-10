@@ -1,6 +1,6 @@
 # Demo 3-Tier CI (Java 17 + Coverage + Docker Smoke Test)
 
-![Build Status](https://github.com/<USERNAME>/<REPO>/actions/workflows/ci.yml/badge.svg)
+![Build Status](https://github.com/baiyendeik-enowmpey/demo-3tier-ci-java17-coverage-docker-test/actions/workflows/ci.yml/badge.svg)
 ![Coverage](https://img.shields.io/badge/coverage-unknown-lightgrey.svg)
 
 Dieses Projekt demonstriert einen vollständigen CI/CD-Ablauf mit Smoke-Test des Docker-Containers.
