@@ -22,4 +22,4 @@ In der `pom.xml` muss folgendes Dependency vorhanden sein:
 </dependency>
 ```
 
-Damit ist der Health Endpoint unter [http://localhost:8080/actuator/health](http://localhost:8080/actuator/health) erreichbar.
+Damit ist der Health Endpoint unter [http://localhost:8088/actuator/health](http://localhost:8080/actuator/health) erreichbar.
