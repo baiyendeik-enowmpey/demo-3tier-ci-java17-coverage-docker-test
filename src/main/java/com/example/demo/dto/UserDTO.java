@@ -15,4 +15,7 @@ public class UserDTO {
     @Email(message = "Ungültige E-Mail-Adresse")
     @NotBlank(message = "E-Mail darf nicht leer sein")
     private String email;
+
+    @NotBlank(message = "First name darf nicht leer sein")
+    private String firstname;
 }

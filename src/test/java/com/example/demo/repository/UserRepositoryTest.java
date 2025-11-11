@@ -15,7 +15,7 @@ class UserRepositoryTest {
 
     @Test
     void saveAndFind() {
-        User user = new User(null, "Repo", "repo@example.com");
+        User user = new User(null, "Repo", "repo@example.com", "Repo");
         User saved = repo.save(user);
         Optional<User> found = repo.findById(saved.getId());
         assertThat(found).isPresent();

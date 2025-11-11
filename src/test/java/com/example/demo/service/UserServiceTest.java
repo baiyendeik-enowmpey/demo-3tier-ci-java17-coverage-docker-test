@@ -1,12 +1,16 @@
 package com.example.demo.service;
 
-import com.example.demo.model.User;
-import com.example.demo.repository.UserRepository;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.mockito.Mockito.mock;
+import static org.mockito.Mockito.times;
+import static org.mockito.Mockito.verify;
+import static org.mockito.Mockito.when;
+
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import java.util.*;
-import static org.junit.jupiter.api.Assertions.*;
-import static org.mockito.Mockito.*;
+
+import com.example.demo.model.User;
+import com.example.demo.repository.UserRepository;
 
 class UserServiceTest {
 
@@ -21,8 +25,8 @@ class UserServiceTest {
 
     @Test
     void createUser_savesEntity() {
-        User user = new User(null, "Test", "test@example.com");
-        when(userRepository.save(user)).thenReturn(new User(1L, "Test", "test@example.com"));
+        User user = new User(null, "Test", "test@example.com", "Test");
+        when(userRepository.save(user)).thenReturn(new User(1L, "Test", "test@example.com", "Test"));
         User saved = userService.createUser(user);
         assertEquals(1L, saved.getId());
         verify(userRepository, times(1)).save(user);
